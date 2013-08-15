@@ -1,4 +1,5 @@
 .vagrant
+Vagrantfile
 packer/packer__aws.box
 packer/packer_amazon-ebs_aws.box
 results/*
