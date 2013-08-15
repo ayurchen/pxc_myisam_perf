@@ -1,0 +1,21 @@
+Run      Engine      Writes/s       Avg RT         95% RT
+Baseline 
+         MyISAM      8518           1.87           2.04
+         Innodb      16922          0.94           0.89
+         
+PXC 1 node
+         MyISAM      5258           3.04           3.17
+         Innodb      7354           2.17           2.81
+         
+PXC 3 node - Single master
+         MyISAM      2573           6.35           8.34
+         Innodb      2308           6.92           9.65
+
+PXC 3 node - Multi master (48 total clients)
+         MyISAM      3219           14.97          18.93
+         Innodb      3035           15.88          21.40
+         
+PXC 3 node - Multi master (16 total clients)
+         MyISAM      3841           4.14           5.69
+         Innodb      3346           4.75           6.89
+         
