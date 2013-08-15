@@ -2,11 +2,11 @@
 
 # Import tests
 . ./test_defs.sh
-
-# Cleanup anything previous
-vagrant destroy -f
-
-# Use Single node environment for baseline
+# 
+# # Cleanup anything previous
+# vagrant destroy -f
+# 
+# # Use Single node environment for baseline
 rm -f Vagrantfile
 ln -s Vagrantfile.single_node Vagrantfile
 vagrant up --provider=aws
