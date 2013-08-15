@@ -18,6 +18,7 @@ wsrep_cluster_address			= gcomm://
 wsrep_node_name                 = <%= hostname %>
 
 wsrep_provider                  = /usr/lib64/libgalera_smm.so
+wsrep_provider_options          = "gcs.fc_limit=1024; evs.user_send_window=32; evs.send_window=32;"
 
 wsrep_sst_method                = xtrabackup
 wsrep_sst_auth                  = sst:secret
